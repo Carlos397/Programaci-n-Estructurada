@@ -9,9 +9,9 @@ def calcular_sueldo(horas_trabajadas, sueldo_hora, porcentaje):
 salir = "S"
 trabajadores = 0
 monto_total = 0
-limpiar_pantalla()
 
 while salir == "S":
+    limpiar_pantalla()
 
     nombre_trabajador = input("Ingrese el nombre del trabajador: ")
     horas_trabajadas = float(input("Ingrese las horas trabajadas: "))
@@ -34,5 +34,5 @@ while salir == "S":
 
     salir = input("Desea ingresar un nuevo trabajador? (s/n): ").upper().strip()
 
-
+limpiar_pantalla()
 print(f"El monto total a pagar por los ${monto_total}, los trabajadores son {trabajadores}")
